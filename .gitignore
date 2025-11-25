@@ -1,0 +1,10 @@
+/vendor/
+composer.lock
+*.png
+*.jpg
+*.jpeg
+/output/
+.DS_Store
+.idea/
+.vscode/
+*.log
