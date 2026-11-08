@@ -1,9 +1,8 @@
 /vendor/
 composer.lock
-*.png
-*.jpg
-*.jpeg
-/output/
+/examples/output/
+.phpunit.result.cache
+.phpunit.cache/
 .DS_Store
 .idea/
 .vscode/

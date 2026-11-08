@@ -1,9 +1,10 @@
 {
     "name": "mojahed/eduplusqr",
-    "description": "EduplusQR - Fast QR Code Generator PHP SDK with Go binary backend.",
+    "description": "Fast QR code and barcode generation for PHP 7.4+ (PNG, SVG, PDF) using the standalone EduplusQR binary: 15 code types, logos, styles, Wi-Fi/vCard/payment payloads, batches, ZIP and PDF label sheets. No PHP extensions needed.",
     "type": "library",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "license": "MIT",
+    "keywords": ["qr", "qrcode", "qr-code", "barcode", "code128", "ean13", "upc", "datamatrix", "pdf417", "aztec", "wifi", "vcard", "label"],
     "authors": [
         {
             "name": "Md Mojahedul Islam",
@@ -11,13 +12,28 @@
             "homepage": "https://md-mojahed.github.io"
         }
     ],
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
     "autoload": {
         "psr-4": {
-            "Mojahed\\": "src/"
+            "Mojahed\\EduplusQR\\": "src/"
         }
     },
-    "require": {
-        "php": ">=7.4"
+    "autoload-dev": {
+        "psr-4": {
+            "Mojahed\\EduplusQR\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
     },
     "minimum-stability": "stable",
     "prefer-stable": true
